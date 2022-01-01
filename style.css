@@ -1,5 +1,19 @@
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 * {
@@ -7,3 +21,29 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  line-height: 50px;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.nav-link:hover {
+  background-color: grey;
+}
+
+
+
